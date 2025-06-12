@@ -4,7 +4,7 @@ import requests
 # -----------------------------
 # Configuration
 # -----------------------------
-WEBHOOK_URL = "https://sowmiya0002.app.n8n.cloud/webhook-test/2bbca00f-8d36-4960-8e62-a13632fe8bea"  # Replace with your actual n8n webhook URL
+WEBHOOK_URL = "https://your-n8n-instance.com/webhook/meeting-actions"  # Replace with your actual n8n webhook URL
 
 # Dummy credentials for login (you can expand this securely later)
 USERS = {
@@ -62,6 +62,7 @@ else:
         meeting_date = st.date_input("Meeting Date")
         action_item = st.text_area("Action Item")
         assigned_to = st.text_input("Assigned To")
+        email = st.text_input("Email")  # ✅ New email input field
         due_date = st.date_input("Due Date")
         submit = st.form_submit_button("Submit")
 
@@ -71,6 +72,7 @@ else:
             "meeting_date": str(meeting_date),
             "action_item": action_item,
             "assigned_to": assigned_to,
+            "email": email,  # ✅ Added to the POST data
             "due_date": str(due_date)
         }
         try:
