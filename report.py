@@ -4,7 +4,7 @@ import requests
 # -----------------------------
 # Configuration
 # -----------------------------
-WEBHOOK_URL = "https://sowmiya0002.app.n8n.cloud/webhook-test/ab44dc75-2d07-4f34-8f12-5e19b6b5c84f"  # Replace with your actual n8n webhook URL
+WEBHOOK_URL = "https://sowmiya0002.app.n8n.cloud/webhook-test/77050dab-dcd3-4272-98bb-9aa51ab5c34c"  # Replace with your actual n8n webhook URL
 
 # Dummy credentials for login (you can expand this securely later)
 USERS = {
