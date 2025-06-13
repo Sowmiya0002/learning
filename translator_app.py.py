@@ -14,7 +14,7 @@ st.markdown("Translate any English sentence into French using Google Gemini + La
 # --- Initialize Gemini Model ---
 try:
     llm = ChatGoogleGenerativeAI(
-        model="gemini-pro",
+        model="Gemini 2.0 Flash-Lite",
         google_api_key=GOOGLE_API_KEY,
         temperature=0.3
     )
