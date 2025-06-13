@@ -14,10 +14,10 @@ st.markdown("Translate any English sentence into French using Gemini + LangChain
 # --- Gemini Model Setup ---
 try:
     llm = ChatGoogleGenerativeAI(
-        model="gemini-pro",  # ✅ Must be lowercase
-        google_api_key=GOOGLE_API_KEY,
-        temperature=0.3
-    )
+    model="models/chat-bison-001",  # Free-tier supported model
+    google_api_key=GOOGLE_API_KEY,
+    temperature=0.3
+)
 except Exception as e:
     st.error(f"❌ Failed to load Gemini model: {e}")
     st.stop()
